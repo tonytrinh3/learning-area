@@ -36,7 +36,7 @@
 
       button.onclick = function() {
         var myItem = input.value;
-        input.value = '';
+        
 
         var listItem = document.createElement('li');
         var listText = document.createElement('span');
@@ -51,7 +51,7 @@
         listBtn.onclick = function(e) {
           list.removeChild(listItem);
         }
-
+        input.value = '';
         input.focus();
       }
     </script>
